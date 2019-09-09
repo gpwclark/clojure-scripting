@@ -1,3 +1,3 @@
-#!/usr/bin/env bin/clojure-script
+#!/usr/bin/env clojure-script
 
 (println "Hello World!")

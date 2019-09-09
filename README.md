@@ -37,10 +37,26 @@ To kill the server:
  
 ```
 make kill-server-processes
-``` 
+```
 
+## Dockerized Installation
+Included in this repository is a Dockerfile that builds the binaries in a
+containerized environment so you don't have to have anything but docker installed
+on your machine to run fast clojure scripts.
+
+Build the container with
+```
+./build.sh
+```
+
+Mount the necessary files to a path on the host. Path chosen should be on $PATH
+so clojure scripts can find it.
+```
+./run.sh ~/bin
+```
 
 Copyright (c) Jeroen van Dijk, Adgoji and contributors
 
 Distributed under the Eclipse Public License 1.0 (same as Clojure).
  
+
